@@ -1,0 +1,12 @@
+Topic Tracker File
+This file maintains a list of all topics currently in existence.
+It updates dynamically when topics are added or removed.
+------------------------------------------------------
+Topics:
+- CentralTracker
+- START
+- app
+- index
+- main
+- qr_code
+- topics

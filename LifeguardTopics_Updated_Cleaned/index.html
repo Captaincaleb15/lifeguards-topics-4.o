@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifeguard Topics</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lifeguard Topics</h1>
+        <div class="top-topics">
+            <h2>Top 3 Topics</h2>
+            <ul id="top-topics-list">
+                <!-- Top topics will be dynamically populated here -->
+            </ul>
+        </div>
+        <div class="navigation">
+            <button onclick="navigate('add')">Add/Promote a Topic</button>
+            <button onclick="navigate('claim')">Claim a Topic</button>
+            <button onclick="navigate('view')">View Topics List</button>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+
+<!-- Add/Promote Topic Page -->
+<div id="add-topic-page" style="display: none;">
+    <h2>Add/Promote a Topic</h2>
+    <input type="text" id="topic-input" placeholder="Enter topic name" />
+    <button onclick="submitTopic()">Submit</button>
+    <button onclick="goBack()">Back</button>
+</div>
+
+
+<!-- Claim Topic Page -->
+<div id="claim-topic-page" style="display: none;">
+    <h2>Claim a Topic</h2>
+    <select id="claim-topic-dropdown">
+        <!-- Options will be dynamically populated -->
+    </select>
+    <input type="text" id="user-name-input" placeholder="Enter your name" />
+    <button onclick="submitClaim()">Claim</button>
+    <button onclick="goBack()">Back</button>
+</div>
+
+
+<!-- View Topics List Page -->
+<div id="view-topics-page" style="display: none;">
+    <h2>Topics List</h2>
+    <div id="topics-list-container"></div>
+    <button onclick="goBack()">Back</button>
+</div>
+
+
+<!-- Delete Topic Page -->
+<div id="delete-topic-page" style="display: none;">
+    <h2>Delete a Topic</h2>
+    <input type="text" id="delete-topic-input" placeholder="Enter topic name" />
+    <input type="text" id="delete-code-input" placeholder="Enter code" />
+    <button onclick="submitDeletion()">Delete</button>
+    <button onclick="goBack()">Back</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Central Tracker for Topics
+This file keeps track of all topics and their statuses.
+Format: [Topic Name] - [Status: In Use/Not In Use]
+---------------------------------------------------
+ExampleTopic1 - Not In Use
+ExampleTopic2 - In Use
